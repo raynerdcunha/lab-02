@@ -103,10 +103,9 @@ fun CityListScreen(
     }
 }
 
+// The following function is from Anthropic, Claude, "How to add a delete key button onto the UI in the above code?", 2025-09-10
 @Composable
 fun CityRow(city: String, onDeleteCity: (String) -> Unit) {
-    // The following fix is from Claude - Anthropic,
-    // "how to add delete key button onto the UI", 2026-09-10
     Row(
         modifier = Modifier.fillMaxWidth().padding(horizontal = 18.dp, vertical = 14.dp),
         horizontalArrangement = Arrangement.SpaceBetween
@@ -126,6 +125,7 @@ fun CityRow(city: String, onDeleteCity: (String) -> Unit) {
         }
     }
 }
+
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
@@ -158,7 +158,7 @@ class CityRepository {
         _cities.add(city)
     }
 
-    // Added a delete function to remove city from the UI display
+    // Added a delete function to remove the city from the UI display
     // To-do of Lab-02
     fun deleteCity(city: String) {
         _cities.remove(city)
