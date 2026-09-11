@@ -103,7 +103,7 @@ fun CityListScreen(
     }
 }
 
-// The following function is from Anthropic, Claude, "How to add a delete key button onto the UI in the above code?", 2025-09-10
+// The following function is from Anthropic, Claude, "How to add a delete key button onto the UI in the above code?", 2026-09-10
 @Composable
 fun CityRow(city: String, onDeleteCity: (String) -> Unit) {
     Row(
